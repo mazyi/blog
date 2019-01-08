@@ -67,6 +67,9 @@ menu:
   - page: archive
     directory: archives/
     icon: fa-archive
+  - page: guestbook
+    directory: guestbook/
+    icon: fa-comments
   - page: about
     directory: about/
     icon: fa-user
@@ -88,4 +91,4 @@ js: js
 css: css
 
 # Theme version
-version: 0.0.0
+version: 1.0.0

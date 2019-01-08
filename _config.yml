@@ -79,3 +79,9 @@ theme: maupassant
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+disqus_proxy:
+  shortname: mablog-1
+  username: mazyi
+  host: sk.exbigger.top
+  port: 443
