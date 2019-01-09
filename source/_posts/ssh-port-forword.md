@@ -1,5 +1,9 @@
 ---
 title: SSH端口转发
+categories: 
+  - 技术
+tags: 
+  - Linux进阶
 ---
 
 #### 简介
