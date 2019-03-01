@@ -19,6 +19,7 @@ SSH可以在两台主机之间建立可靠安全的连接，并可以执行命�
 ##### 常见例子
 - 用户直接登陆到机器获得的第一个shell
 - 用户使用ssh user@remote获得的shell
+
 ##### 加载的配置文件
 首先加载`/etc/profile`文件，然后再尝试依次去加载下列三个配置文件之一，一旦找到其中一个便不再接着寻找：
 `~/.bash_profile`、`~/.bash_login`、`~/.profile`
@@ -26,12 +27,14 @@ SSH可以在两台主机之间建立可靠安全的连接，并可以执行命�
 #### non-interactive + login shell
 ##### 常见例子
 - bash -l script.sh，-l参数是将shell作为一个login shell启动，而执行脚本又使它为non-interactive shell
+
 ##### 加载的配置文件
 与第一种相同
 
 #### interactive + non-login shell
 ##### 常见例子
 - 在一个已有shell中运行bash，此时会打开一个交互式的shell，且不再需要登陆
+
 ##### 加载的配置文件
 加载`/etc/bash.bashrc`和`~/.bashrc`文件
 
@@ -39,6 +42,7 @@ SSH可以在两台主机之间建立可靠安全的连接，并可以执行命�
 ##### 常见例子
 - bash script.sh
 - ssh user@remote command
+
 ##### 加载的配置文件
 - 寻找环境变量`BASH_ENV`，将变量的值作为文件名进行查找，如果找到便加载它
 - 加载`~/.bashrc`文件，默认文件会判断，如果进入shell时没有`-i`参数则什么都不做
