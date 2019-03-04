@@ -1,5 +1,6 @@
 ---
 title: Ubuntu里安装Java JDK 8
+date: 2019-3-4 12:00:00
 categories: 
   - 技术
 tags: 
