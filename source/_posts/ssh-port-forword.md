@@ -58,15 +58,12 @@ ssh -NfR 8080:localhost:80 user@host
 -f：后台认证用户/密码，通常与-N连用，不用登陆到远程主机
 -g：在-L/-D/-R参数中，允许远程主机连接到建立的转发端口，如果不加这个参数，只允许本地主机建立连接
 -i：从指定文件中读取传输时使用的密钥文件
-
 -D：指定一个本地机器的端口，建立SSH隧道，把通过隧道到数据转发到远端的所有地址
 -L：将本地机(客户机)的某个端口转发到远端指定机器的指定端口
 -R：将远程主机(服务器)的某个端口转发到本地端指定机器的指定端口
 ```
 
-
-
 #### 参考文档
-> [https://www.ibm.com/developerworks/cn/linux/l-cn-sshforward/index.html](https://www.ibm.com/developerworks/cn/linux/l-cn-sshforward/index.html)
-> [https://www.cnblogs.com/sparkdev/p/7497388.html](https://www.cnblogs.com/sparkdev/p/7497388.html)
+> [实战 SSH 端口转发](https://www.ibm.com/developerworks/cn/linux/l-cn-sshforward/index.html)
+> [SSH 端口转发](https://www.cnblogs.com/sparkdev/p/7497388.html)
 
