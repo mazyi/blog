@@ -22,7 +22,6 @@ SSH可以在两台主机之间建立可靠安全的连接，并可以执行命�
 ##### 加载的配置文件
 首先加载`/etc/profile`文件，然后再尝试依次去加载下列三个配置文件之一，一旦找到其中一个便不再接着寻找：
 `~/.bash_profile`、`~/.bash_login`、`~/.profile`
-
 #### non-interactive + login shell
 ##### 常见例子
 - bash -l script.sh，-l参数是将shell作为一个login shell启动，而执行脚本又使它为non-interactive shell
