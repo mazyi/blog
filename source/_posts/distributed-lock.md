@@ -96,10 +96,10 @@ Chubby是Google内部使用的分布式锁系统，也是较全面的实现了�
 具体的实现操作这里不做介绍，详见参考文档6中的说明。
 
 ### 参考文档
-> 1[基于Redis的分布式锁到底安全吗（上）](http://zhangtielei.com/posts/blog-redlock-reasoning.html)
-> 2[基于Redis的分布式锁到底安全吗（下）](http://zhangtielei.com/posts/blog-redlock-reasoning-part2.html)
-> 3[分布式之抉择分布式锁](https://www.cnblogs.com/rjzheng/p/9310976.html)
-> 4[Redis 分布式锁的正确实现方式（ Java 版 ）](http://www.importnew.com/27477.html)
-> 5[基于Zookeeper的分布式锁](http://www.dengshenyu.com/java/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/2017/10/23/zookeeper-distributed-lock.html)
-> 6[Chubby的锁服务](https://catkang.github.io/2017/09/29/chubby.html)
-> 7[再有人问你分布式锁，这篇文章扔给他](https://juejin.im/post/5bbb0d8df265da0abd3533a5#heading-21)
+> 1 [基于Redis的分布式锁到底安全吗（上）](http://zhangtielei.com/posts/blog-redlock-reasoning.html)
+> 2 [基于Redis的分布式锁到底安全吗（下）](http://zhangtielei.com/posts/blog-redlock-reasoning-part2.html)
+> 3 [分布式之抉择分布式锁](https://www.cnblogs.com/rjzheng/p/9310976.html)
+> 4 [Redis 分布式锁的正确实现方式（ Java 版 ）](http://www.importnew.com/27477.html)
+> 5 [基于Zookeeper的分布式锁](http://www.dengshenyu.com/java/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/2017/10/23/zookeeper-distributed-lock.html)
+> 6 [Chubby的锁服务](https://catkang.github.io/2017/09/29/chubby.html)
+> 7 [再有人问你分布式锁，这篇文章扔给他](https://juejin.im/post/5bbb0d8df265da0abd3533a5#heading-21)
