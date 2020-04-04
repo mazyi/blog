@@ -1,5 +1,5 @@
 ---
-title: Ubuntu里安装Java JDK 11
+title: Ubuntu里安装Mysql数据库
 date: 2020-4-4 20:00:00
 categories: 
   - 技术
