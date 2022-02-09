@@ -5,7 +5,6 @@ categories:
   - 技术
 tags: 
   - Linux进阶
-  - 技术分享
 ---
 
 ### 简介
