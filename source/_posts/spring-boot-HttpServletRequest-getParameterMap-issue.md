@@ -53,8 +53,8 @@ tags:
 继续看就会进入Request类的getParameterNames()函数、parseParameters()函数
 ![parseParameters()函数](/images/parseParameters.png)
 
-3183行的parameters.handleQueryParameters()处理了请求里的参数，此时如果usingInputStream是true，就return了，而3201行到3215行才处理了form里的参数
-继续追踪usingInputStream的设置，发现只有一个地方设置了，那就是getInputStream()函数！
+3183行的parameters.handleQueryParameters()处理了请求里的参数，此时如果usingInputStream是true，就return了，而3202行才处理了form里的参数
+继续追踪usingInputStream的设值，发现只有一个地方，那就是getInputStream()函数！
 ![设置usingInputStream的getInputStream()函数](/images/usingInputStream.png)
 
 所以一旦在调用getInputStream()前没有调用过getParameterMap()的话，form里的参数就会丢失
