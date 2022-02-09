@@ -8,11 +8,11 @@ tags:
 ---
 
 ### 简介
-使用spring boot 的时候，通常会拦截请求中的参数。在使用Filter拦截Request的时候，除了要注意body是一个stream，读取了一次要重新设置一个stream以外，鲜有人提到拦截前后getParameterMap方法的行为会产生变化
+使用spring boot 的时候，通常会拦截请求中的参数在使用Filter拦截Request的时候，除了要注意body是一个stream，读取了一次要重新设置一个stream以外，鲜有人提到拦截前后getParameterMap方法的行为会产生变化
 
 ### 问题重现
 
-这是Controller的代码，获取到parameterMap后返回。
+这是Controller的代码，获取到parameterMap后返回
 ![Controller代码](/images/controller.png)
 
 #### 正常情况
@@ -42,7 +42,7 @@ tags:
 
 ### 原因探究
 
-直接在源码上断点，注意有时候反编译的源码会不匹配，在反编译出来的文件上点Download Source Code，会下载真正的源码进而匹配。
+直接在源码上断点，注意有时候反编译的源码会不匹配，在反编译出来的文件上点Download Source Code，会下载真正的源码进而匹配
 
 从getParameterMap()函数看进去的话，经过几个函数，可以在org.apache.catalina.connector.Request类中看到getParameterMap()函数如下：
 ![getParameterMap()函数](/images/getParameterMap.png)
@@ -53,11 +53,11 @@ tags:
 继续看就会进入Request类的getParameterNames()函数、parseParameters()函数
 ![parseParameters()函数](/images/parseParameters.png)
 
-3183行的parameters.handleQueryParameters()处理了请求里的参数，此时如果usingInputStream是true，就return了，而3201行到3215行才处理了form里的参数。
+3183行的parameters.handleQueryParameters()处理了请求里的参数，此时如果usingInputStream是true，就return了，而3201行到3215行才处理了form里的参数
 继续追踪usingInputStream的设置，发现只有一个地方设置了，那就是getInputStream()函数！
 ![设置usingInputStream的getInputStream()函数](/images/usingInputStream.png)
 
-所以一旦在调用getInputStream()前没有调用过getParameterMap()的话，form里的参数就会丢失。
+所以一旦在调用getInputStream()前没有调用过getParameterMap()的话，form里的参数就会丢失
 
 
 ### 小结
