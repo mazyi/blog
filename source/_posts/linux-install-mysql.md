@@ -1,9 +1,10 @@
 ---
-title: Ubuntu里安装Mysql数据库
+title: Ubuntu里安装MySQL数据库
 date: 2020-4-4 20:00:00
 categories: 
   - 技术
 tags: 
+  - MySQL
   - Linux基础
 ---
 
