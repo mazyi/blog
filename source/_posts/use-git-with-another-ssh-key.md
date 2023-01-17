@@ -8,10 +8,11 @@ tags:
 ---
 
 ### Git Clone
+在git clone时使用非默认密钥
 
 `git clone git@github.com:<your repo>.git --config core.sshCommand="ssh -i ~/.ssh/<your another key>"`
 
 ### Git其他相关命令
-在git仓库文件夹下执行
+在git仓库文件夹下执行git命令时，使用非默认密钥
 
 `git config core.sshCommand "ssh -i ~/.ssh/<your another key>"`
