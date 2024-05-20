@@ -22,7 +22,7 @@ tags:
 5. 在需要访问内网服务的客户机器下载并使用cloudflared连接tcp转发端口
 
     ```
-    cloudflared.exe access tcp --hostname {your Tcp public hostname} --listener {local ip}:{local port}
+    cloudflared.exe access tcp --hostname {your cloudflare public hostname} --listener {local ip}:{local port}
     ```
     
 6. 通过上一步设置的本地机器的端口访问内网TCP服务
