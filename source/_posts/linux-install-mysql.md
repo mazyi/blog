@@ -8,6 +8,7 @@ tags:
   - Linux基础
 ---
 
+```
 sudo apt-get install mysql-server mysql-client
 
 cat /etc/mysql/debian.cnf 找到初始帐号密码
@@ -21,3 +22,4 @@ mysql -u username -p password 用初始帐号密码登陆mysql
 5. quit; 
 
 sudo service mysql restart
+```

@@ -48,7 +48,7 @@ tags:
 ![getParameterMap()函数](/images/getParameterMap.png)
 
 这里的代码说明，如果获取了一次map，之后就不用再获取了，所以只要第一次获取的是正确的，以后都会是正确的
-问题在于，为什么我们不先获取map，直接在controller里面获取就不对了呢？
+问题在于，为什么我们不先获取map，但是直接在controller里面获取就不对了呢？
 
 继续看就会进入Request类的getParameterNames()函数、parseParameters()函数
 ![parseParameters()函数](/images/parseParameters.png)
